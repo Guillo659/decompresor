@@ -40,12 +40,11 @@ if [ -f $file ]; then
 			7z x $file
 
 			#Cambiar nombre con la extension correcta
-			'''
-			file_name=$(file $file_des | tr "." " " | tr ":" " " | awk '{print $1}')
-			file_ext=$(file $file_des | tr "." " " | awk '{print $3}')
-			mv $file_des "$file_name.$file_ext"
-			file_new_name="$file_name.$file_ext"
-			'''
+			#file_name=$(file $file_des | tr "." " " | tr ":" " " | awk '{print $1}')
+			#file_ext=$(file $file_des | tr "." " " | awk '{print $3}')
+			#mv $file_des "$file_name.$file_ext"
+			#file_new_name="$file_name.$file_ext"
+   
 			file=$file_des
 		else
 			echo -e "\nTodos los archivos fueron descomprimidos" 
